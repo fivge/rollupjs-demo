@@ -11,6 +11,32 @@ node
 'hello world!'
 ```
 
+### build
+
+- cjs
+- es
+- systemjs
+
+### Code Splitting
+
+#### cjs
+
+#### es6 module
+
+#### SystemJs
+
+<https://github.com/rollup/rollup-starter-code-splitting>
+
+### plugins
+
+#### @rollup/plugin-json
+
+> 从 JSON 文件中读取数据
+
+#### rollup-plugin-terser
+
+> provide a minified build together with the non-minified one
+
 ---
 
 <https://rollupjs.org/guide/en/>
@@ -18,3 +44,5 @@ node
 <https://rollupjs.org/guide/zh/#%E5%88%9B%E5%BB%BA%E7%AC%AC%E4%B8%80%E4%B8%AAbundlecreating-your-first-bundle>
 
 <https://rollupjs.org/guide/en/#plugins>
+
+<https://github.com/rollup/awesome>
