@@ -5,14 +5,22 @@
   "scripts": {
     "clean": "rm -rf dist",
     "prebuild:es": "yarn clean && mkdir dist && cp src/index.es.html dist/",
+    "prebuild:purees": "yarn clean && mkdir dist && cp src/pure-es6/index.es.html dist/",
     "build:es": "yarn prebuild:es && rollup src/main.js src/main2.js -f es -d dist",
     "build:system": "yarn clean && rollup src/main.js src/main2.js -f system -d dist",
-    "build:node": "yarn clean && rollup -c rollup.config.js"
+    "build:node": "yarn clean && rollup -c rollup.config.js",
+    "build:purees6": "yarn prebuild:purees && rollup -c rollup.config.pure-es6.js"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.2",
     "@rollup/plugin-json": "^4.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
     "rollup": "^2.3.2",
     "rollup-plugin-terser": "^5.3.0",
     "systemjs": "^6.2.6"
+  },
+  "dependencies": {
+    "rxjs": "^6.5.4",
+    "the-answer": "^1.0.0"
   }
 }

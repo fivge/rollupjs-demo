@@ -37,6 +37,16 @@ node
 
 > provide a minified build together with the non-minified one
 
+#### @rollup/plugin-node-resolve
+
+> teaches Rollup how to find external modules
+
+**es6 module only**
+
+#### @rollup/plugin-commonjs
+
+> 🍣 A Rollup plugin to convert CommonJS modules to ES6, so they can be included in a Rollup bundle
+
 ---
 
 <https://rollupjs.org/guide/en/>
