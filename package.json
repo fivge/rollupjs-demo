@@ -1,0 +1,11 @@
+{
+  "name": "rollup-demo",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "build": "rollup -c rollup.conf.js -o dist/bundle.js"
+  },
+  "devDependencies": {
+    "rollup": "^2.3.2"
+  }
+}
